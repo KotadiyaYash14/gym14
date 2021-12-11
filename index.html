@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitnees GYM</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset */
+    body {
+        font-family: 'Josefin Sans', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .left {
+
+        display: inline-block;
+        position: absolute;
+        left: 50px;
+        top: 30px;
+
+    }
+
+    .left img {
+        width: 70px;
+
+    }
+
+    .left div {
+        text-align: center;
+        color: white;
+        line-height: 15px;
+        font-size: 12px;
+    }
+
+    .center {
+
+        display: block;
+        width: 30%;
+        margin: 30px auto;
+    }
+
+    .right {
+
+        display: inline-block;
+        position: absolute;
+        right: 50px;
+        top: 30px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        text-decoration: underline;
+        color: rgb(104, 104, 255);
+    }
+
+    .btn {
+        margin: 15px 5px;
+        padding: 3px 10px;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        cursor: pointer;
+      
+    }
+
+    .btn:hover {
+        background-color: rgb(104, 104, 255);
+
+    }
+
+    .container {
+
+        margin: 100px 900px;
+        padding: 50px;
+        width: 30%;
+        border-radius: 10px;
+
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 300px;
+        padding: 5px;
+        border: 2px solid black;
+        margin: 10px auto;
+        border-radius: 5px;
+        font-size: 15px;
+        outline: none;
+
+
+    }
+
+    .container h1 {
+        text-align: center;
+        color: white;
+        font-size: 30px;
+    }
+
+    .container button {
+        display: block;
+        width: 20%;
+        margin: auto;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/logo.jpg" alt="">
+            <div>Fitness Club</div>
+        </div>
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join The Best GYM of Gujrat Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" email="" placeholder="Enter Your Email">
+            </div>
+            <div class="form-group">
+                <input type="text" gender="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" age="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" number="" placeholder="Enter Your number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
